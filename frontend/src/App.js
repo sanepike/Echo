@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 import './App.css';
 import Sidebar from './components/Sidebar';
@@ -10,14 +10,14 @@ import bot from './bot.svg'
 export default function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <HashRouter>
         <Sidebar/>
         <Routes>
           <Route path='/' element={<Upload />}/>
           <Route path='/next' element={<Options />}/>
           <Route path='/done' element={<Output />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <img className='bot' src={bot} alt="robot"/>
     </div>
   );
