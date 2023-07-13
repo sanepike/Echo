@@ -15,7 +15,7 @@ export default function Options() {
       return
     }
     try {
-      const response = await fetch("/choose_service",
+      const response = await fetch("https://ai-code-enhancer.onrender.com/choose_service",
       {
         method: 'post',
         headers: {'Content-Type': 'application/json'},

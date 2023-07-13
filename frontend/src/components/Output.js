@@ -8,7 +8,7 @@ export default function Output() {
   useEffect(() => {
     const fetchResult = async () => {
       try {
-        const response = await fetch('/run_echo',
+        const response = await fetch('https://ai-code-enhancer.onrender.com/run_echo',
         {
           method: 'get'
         })

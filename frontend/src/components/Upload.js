@@ -14,7 +14,7 @@ export default function Upload() {
     const data = new FormData();
     data.append('file_from_react', file);
     try {
-      const response = await fetch('/url_route',
+      const response = await fetch('https://ai-code-enhancer.onrender.com/url_route',
       {
         method: 'post',
         // headers: {'Content-Type': 'application/json'},
@@ -38,7 +38,7 @@ export default function Upload() {
       return
     }
     try {
-    const response = await fetch('/upload_text_url_route',
+    const response = await fetch('https://ai-code-enhancer.onrender.com/upload_text_url_route',
       {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
